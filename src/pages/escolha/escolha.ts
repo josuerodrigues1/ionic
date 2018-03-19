@@ -1,3 +1,8 @@
+/**
+ *  Páginas e componentes criados pelo ionic pelo comando: 
+ * ionic g page escolha
+ * TEM QUE COLOCAR NO MODULO PRINCIPAL, Ionic nao faz isso automatico
+ */
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Carro } from '../../modelos/carro';

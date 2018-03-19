@@ -16,22 +16,37 @@ import 'rxjs/add/operator/finally';
   declarations: [
     MyApp,
     HomePage
+    //EscolhaPage.. no curso ele coloca aqui... nao sei pq nao apareceu
   ],
   imports: [
     BrowserModule,
+    
+    //para que seja possível usar o HttpClient nos componentes(nao esquecer o import la em cimae)
     HttpClientModule,
+    
+    //Define o componente Principal MyApp - import { MyApp } from './app.component';
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage
+    //EscolhaPage.. no curso ele coloca aqui... nao sei pq nao apareceu
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    
+    /** 
+     * Colocado aqui pelo ionic no momento que eu dei o comando pra ele criar o providers
+     * e o import la em cima
+    */
     CarrosServiceProvider,
+    /** 
+     *
+    */
+    
     AgendamentosServiceProvider
   ]
 })
